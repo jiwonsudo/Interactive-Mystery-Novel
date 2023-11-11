@@ -1,12 +1,20 @@
 import Nav from './Nav';
 import styled from 'styled-components';
 
+import stories from './data';
+
 const MainDiv = styled.div`
   width: 100vw;
   background-color: #FFFFFF;
 `;
 
 function Contents() {
+  const btnBlueColor = '#0C3E9D';
+  const btnGrayColor = '#C9C9C9';
+
+  let btnBlueContent = 'testBlueText';
+  let btnGrayContent = 'testGrayText';
+
   const MainText = styled.div`
     margin: 30px 15px 0;
     color: #000000;
@@ -30,7 +38,10 @@ function Contents() {
   return (
     <>
       <MainText>컨텐츠</MainText>
-      <ButtonContainer></ButtonContainer>
+      <ButtonContainer>
+        <Button color={btnGrayColor}>{btnBlueContent}</Button>
+        <Button color={btnBlueColor}>{btnGrayContent}</Button>
+      </ButtonContainer>
     </>
   );
 }

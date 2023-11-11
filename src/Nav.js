@@ -28,6 +28,7 @@ function Nav() {
 
   function handleDescDisplay() {
     setShowDescription(true);
+
     setTimeout(() => {
       setShowDescription(false)
     }, 1200);
@@ -46,7 +47,7 @@ function Nav() {
     height: 35px;
     margin: 0 15px;
     background-size: cover;
-    background-image: url(${(props) => props.$src});
+    background-image: url(${(props) => props.src});
   `;
   const CurrWeatherInfo = styled.div`
     padding: 10px;
@@ -56,14 +57,14 @@ function Nav() {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 0 0 0 0.5em;
     color: white;
-    display: ${(props) => props.$isVisible ? 'block' : 'none'};
+    display: ${(props) => props.isvisible ? 'block' : 'none'};
   `;
 
   return (
     <NavBar>
-      <Icon $src="/images/puzzle_white.png"></Icon>
-      <Icon $src={weatherIconUrl} onClick={handleDescDisplay}></Icon>
-      <CurrWeatherInfo $isVisible={showDescription}>{currWeather}</CurrWeatherInfo>
+      <Icon src="/images/puzzle_white.png"></Icon>
+      <Icon src={weatherIconUrl} onClick={handleDescDisplay}></Icon>
+      <CurrWeatherInfo isvisible={showDescription}>{currWeather}</CurrWeatherInfo>
     </NavBar>
   );
 }
