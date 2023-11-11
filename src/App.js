@@ -1,31 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from './Nav';
+import styled from 'styled-components';
 
-function Nav() {
+const MainDiv = styled.div`
+  width: 100vw;
+  background-color: #FFFFFF;
+`;
+
+function Contents() {
+  const MainText = styled.div`
+    margin: 30px 15px 0;
+    color: #000000;
+  `;
+
+  const Button = styled.button`
+    padding: 14px 25px;
+    border-radius: 15px;
+    border: 1px solid #858585;
+    background: ${(props) => props.color ? props.color : '#FFFFFF'};
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  `;
+
+  const ButtonContainer = styled.div`
+    margin: 30px 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  `;
+
   return (
-    <div className="Nav">
-    </div>
-  )
+    <>
+      <MainText>컨텐츠</MainText>
+      <ButtonContainer></ButtonContainer>
+    </>
+  );
 }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainDiv>
+      <Nav></Nav>
+      <Contents></Contents>
+    </MainDiv>
   );
 }
 
