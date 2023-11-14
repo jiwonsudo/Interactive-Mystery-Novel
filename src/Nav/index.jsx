@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import getWeather from '../weather';
+import getWeather from './weather';
 import { WEATHER_IMAGE_URI, getWeatherImageUri } from './iconHandler';
 
 const NavBar = styled.nav`
@@ -31,7 +31,8 @@ color: white;
 display: ${(props) => props.isvisible ? 'block' : 'none'};
 `;
 
-export default function Nav() {
+function Nav() {
+
   const [currWeather, setCurrWeather] = useState('nothing');
   const [weatherIconUrl, setWeatherIconUrl] = useState('nothing');
   const [showDescription, setShowDescription] = useState(false);
@@ -39,7 +40,7 @@ export default function Nav() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async (locationData) => {
       const weatherData = await getWeather(locationData);
-      update(weatherData, getWeatherImageUri(weatherData));
+      weatherUpdate(weatherData, getWeatherImageUri(weatherData));
     }, (error) => {
       if (error.code === 1) {
         window.alert('위치 정보 사용을 끄면 날씨 정보를 불러올 수 없어요.');
@@ -48,11 +49,11 @@ export default function Nav() {
       }
       console.warn(`Error(geolocation) ${error.code}: ${error}`);
       console.log(error);
-      update('No weather', WEATHER_IMAGE_URI.WEATHER_ERROR);
+      weatherUpdate('No weather', WEATHER_IMAGE_URI.WEATHER_ERROR);
     });
   }, []);
 
-  function update(weatherDescription, weatherImageUri) {
+  function weatherUpdate(weatherDescription, weatherImageUri) {
     setCurrWeather(weatherDescription);
     setWeatherIconUrl(weatherImageUri);
   }
@@ -69,7 +70,9 @@ export default function Nav() {
     <NavBar>
       <Icon src="/images/puzzle_white.png"></Icon>
       <Icon src={weatherIconUrl} onClick={handleDescDisplay}></Icon>
-      <CurrWeatherInfo isvisible={showDescription}>{currWeather}</CurrWeatherInfo>
+      <CurrWeatherInfo isVisible={showDescription}>{currWeather}</CurrWeatherInfo>
     </NavBar>
   );
 };
+
+export default Nav;
