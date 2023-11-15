@@ -13,8 +13,8 @@ background-color: #06296C;
 `;
 
 const Icon = styled.div`
-width: 35px;
-height: 35px;
+width: ${(props) => props.$widthHeight ? props.$widthHeight : '35px'};
+aspect-ratio: 1 / 1;
 margin: 0 15px;
 background-size: cover;
 background-image: url(${(props) => props.$src});
@@ -68,8 +68,8 @@ function Nav() {
 
   return (
     <NavBar>
-      <Icon $src="/images/puzzle_white.png"></Icon>
-      <Icon $src={weatherIconUrl} onClick={handleDescDisplay}></Icon>
+      <Icon $src="/main_logo.svg" $widthHeight="30px"></Icon>
+      <Icon $src={weatherIconUrl} $widthHeight="32px" onClick={handleDescDisplay}></Icon>
       <CurrWeatherInfo $isVisible={showDescription}>{currWeather}</CurrWeatherInfo>
     </NavBar>
   );
