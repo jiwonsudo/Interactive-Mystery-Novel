@@ -37,8 +37,6 @@ function Contents() {
   const btnGrayBgColor = '#C9C9C9';
   const btnBlueColor = '#FFFFFF';
   const btnGrayColor = '#FFFFFF';
-  
-  const STORY_DATA_URI = '../../data/stories.json';
 
   const [mainContent, setMainContent] = useState('눈에 갇힌 외딴 산장에서 - 히가시노 게이고');
   const [userChoices, setUserChoices] = useState([]);  // use 'A' for choosing gray, use 'B' for choosing blue.
