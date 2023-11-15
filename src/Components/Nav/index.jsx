@@ -40,7 +40,7 @@ function Nav() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async (locationData) => {
       const weatherData = await getWeather(locationData);
-      updateWeather(weatherData, getWeatherImageUri(weatherData));
+      updateWeather(weatherData.toUpperCase(), getWeatherImageUri(weatherData));
     }, (error) => {
       if (error.code === 1) {
         window.alert('위치 정보 사용을 끄면 날씨 정보를 불러올 수 없어요.');
