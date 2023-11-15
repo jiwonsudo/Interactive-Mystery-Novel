@@ -28,7 +28,7 @@ position: absolute;
 background-color: rgba(0, 0, 0, 0.6);
 border-radius: 0 0 0 0.5em;
 color: white;
-display: ${(props) => props.isvisible ? 'block' : 'none'};
+display: ${(props) => props.$isVisible ? 'block' : 'none'};
 `;
 
 function Nav() {
@@ -70,7 +70,7 @@ function Nav() {
     <NavBar>
       <Icon src="/images/puzzle_white.png"></Icon>
       <Icon src={weatherIconUrl} onClick={handleDescDisplay}></Icon>
-      <CurrWeatherInfo isVisible={showDescription}>{currWeather}</CurrWeatherInfo>
+      <CurrWeatherInfo $isVisible={showDescription}>{currWeather}</CurrWeatherInfo>
     </NavBar>
   );
 };
