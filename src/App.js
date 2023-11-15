@@ -1,4 +1,4 @@
-import Nav from './Nav';
+import Nav from './Components/Nav';
 import styled from 'styled-components';
 
 import stories from './data';
@@ -18,6 +18,7 @@ function Contents() {
   const MainText = styled.div`
     margin: 30px 15px 0;
     color: #000000;
+    font-family: 'MaruBuriSB', serif;
   `;
 
   const Button = styled.button`
