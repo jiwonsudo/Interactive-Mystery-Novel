@@ -17,7 +17,7 @@ width: 35px;
 height: 35px;
 margin: 0 15px;
 background-size: cover;
-background-image: url(${(props) => props.src});
+background-image: url(${(props) => props.$src});
 `;
 
 const CurrWeatherInfo = styled.div`
@@ -40,7 +40,7 @@ function Nav() {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async (locationData) => {
       const weatherData = await getWeather(locationData);
-      weatherUpdate(weatherData, getWeatherImageUri(weatherData));
+      updateWeather(weatherData, getWeatherImageUri(weatherData));
     }, (error) => {
       if (error.code === 1) {
         window.alert('위치 정보 사용을 끄면 날씨 정보를 불러올 수 없어요.');
@@ -49,11 +49,11 @@ function Nav() {
       }
       console.warn(`Error(geolocation) ${error.code}: ${error}`);
       console.log(error);
-      weatherUpdate('No weather', WEATHER_IMAGE_URI.WEATHER_ERROR);
+      updateWeather('No weather', WEATHER_IMAGE_URI.WEATHER_ERROR);
     });
   }, []);
 
-  function weatherUpdate(weatherDescription, weatherImageUri) {
+  function updateWeather(weatherDescription, weatherImageUri) {
     setCurrWeather(weatherDescription);
     setWeatherIconUrl(weatherImageUri);
   }
@@ -68,8 +68,8 @@ function Nav() {
 
   return (
     <NavBar>
-      <Icon src="/images/puzzle_white.png"></Icon>
-      <Icon src={weatherIconUrl} onClick={handleDescDisplay}></Icon>
+      <Icon $src="/images/puzzle_white.png"></Icon>
+      <Icon $src={weatherIconUrl} onClick={handleDescDisplay}></Icon>
       <CurrWeatherInfo $isVisible={showDescription}>{currWeather}</CurrWeatherInfo>
     </NavBar>
   );
