@@ -10,16 +10,8 @@ const Button = styled.button`
   color: ${(props) => props.$color ? props.$color : '#FFFFFF'};
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: 'NanumSquareNeo' sans-serif;
-  font-size: 0.7em;
-  line-height: 0.8em;
-  display: ${(props) => props.$isHidden ? 'none' : 'block'};
+  font-size: 0.8em;
+  line-height: 0.9em;
 `;
 
-const ButtonContainer = styled.div`
-  margin: 30px 15px 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-`;
-
-export { Button, ButtonContainer };
+export default Button;

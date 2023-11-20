@@ -1,28 +1,26 @@
 import { useState } from 'react';
-import Nav from './Components/Nav';
-import CoverContents from './Components/CoverContents';
-import StoryContents from './Components/StoryContents'
-import { MainDiv } from './Components/GlobalStyle';
+import StoryCoverView from './views/StoryCoverView';
 
 function App() {
-  const [mode, setMode] = useState('coverMode')  // coverMode, storyMode, endMode
-  let content = null;
+  const [mode, setMode] = useState('coverMode')  // coverMode, readMode, endMode
+  let view = null;
 
-  function handleModeChange(newMode) {
+  function handleChangeMode(newMode) {
     setMode(newMode);
-  }
+  } 
 
   if (mode === 'coverMode') {
-    content = <CoverContents onModeChange={handleModeChange}></CoverContents>;
-  } else if (mode === 'storyMode') {
-    content = <StoryContents onModeChange={handleModeChange}></StoryContents>;
+    view = <StoryCoverView onModeChange={ handleChangeMode }/>;
+  } else if (mode === 'readMode') {
+    // view = <StoryReadView/>
+  } else if (mode === 'endMode') {
+    // view = <StoryEndView/>
   }
 
   return (
-    <MainDiv>
-      <Nav></Nav>
-      { content }
-    </MainDiv>
+    <>
+      { view }
+    </>
   );
 }
 
