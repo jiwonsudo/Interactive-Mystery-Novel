@@ -23,8 +23,9 @@ const WriterInfo = styled.p`
   font-size: 0.8em;
 `;
 
+const btnBgColor = '#06296C';
+
 function StoryCoverView({ onModeChange }) {
-  const btnBgColor = '#06296C';
 
   const coverTitle = getTitle();
   const coverOriginalAuthor = `원작 ${getOriginalAuthor()}`;

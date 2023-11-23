@@ -12,6 +12,7 @@ const Button = styled.button`
   font-family: 'NanumSquareNeo' sans-serif;
   font-size: 0.8em;
   line-height: 0.9em;
+  display: ${props => props.$isVisible ? props.$isVisible : 'block'};
 `;
 
 export default Button;

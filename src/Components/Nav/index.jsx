@@ -37,6 +37,7 @@ function Nav() {
   const [weatherIconUrl, setWeatherIconUrl] = useState('nothing');
   const [showDescription, setShowDescription] = useState(false);
 
+  // On first render
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(async (locationData) => {
       const weatherData = await getWeather(locationData);
@@ -69,8 +70,8 @@ function Nav() {
   return (
     <NavBar>
       <Icon $src="/main_logo.svg" $widthHeight="30px"></Icon>
-      <Icon $src={weatherIconUrl} $widthHeight="32px" onClick={handleDescDisplay}></Icon>
-      <CurrWeatherInfo $isVisible={showDescription}>{currWeather}</CurrWeatherInfo>
+      <Icon $src={ weatherIconUrl } $widthHeight="32px" onClick={ handleDescDisplay }></Icon>
+      <CurrWeatherInfo $isVisible={ showDescription }>{ currWeather }</CurrWeatherInfo>
     </NavBar>
   );
 };
