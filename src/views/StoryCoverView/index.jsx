@@ -5,7 +5,7 @@ import MainText from '../../Components/MainText';
 import ButtonContainer from '../../Components/ButtonContainer';
 import Button from '../../Components/Button';
 
-import { getTitle, getOriginalAuthor, getAdaptationWriter } from './coverDataHandler';
+import { getTitle, getOriginalAuthor, getAdaptationWriter } from './coverDataGetter';
 
 const CoverText = styled(MainText)`
   margin-top: 30vh;

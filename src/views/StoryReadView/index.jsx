@@ -6,13 +6,13 @@ import MainText from '../../Components/MainText';
 import ButtonContainer from '../../Components/ButtonContainer';
 import Button from '../../Components/Button';
 
-import { getMainStory, getChoiceA, getChoiceB, getIfEnd } from './readDataHandler';
+import { getMainStory, getChoiceA, getChoiceB, getIfEnd } from './readDataGetter';
 
 const btnABgColor = '#858585';
 const btnBBgColor = '#0C3E9D';
 const btnAColor = '#000000';
 
-function StoryReadView({ onModeChange }) {
+function StoryReadView({ onModeChange, onDataHandle }) {
 
   const [userChoices, setUserChoices] = useState([]); // add 'A' when first choice selected, add 'B' when second'.
   const [mainText, setMainText] = useState('');
@@ -24,6 +24,7 @@ function StoryReadView({ onModeChange }) {
   function handleClick(event) {
     if (isEnd === true) {
       onModeChange('endMode');
+      onDataHandle(userChoices);
     } else {
       if (event.target.id === 'btnA') {
         setUserChoices([...userChoices, 'A']);
