@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import MainDiv from '../../Components/MainDiv';
-import Nav from '../../Components/Nav';
 import MainText from '../../Components/MainText';
 import ButtonContainer from '../../Components/ButtonContainer';
 import Button from '../../Components/Button';
@@ -37,7 +36,6 @@ function StoryCoverView({ onModeChange }) {
   
   return (
     <MainDiv>
-      <Nav/>
       <CoverText>
         <Title>{ coverTitle }</Title>
         <WriterInfo>{ coverOriginalAuthor }</WriterInfo>

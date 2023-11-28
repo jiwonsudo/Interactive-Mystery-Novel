@@ -6,7 +6,6 @@ function getSerialStories(userChoices) {
 
   userChoices.forEach(choice => {
     currChoices += choice;
-    console.log(currChoices);
     fullStory += ` ${getStoryDataByPartialKey('story' + currChoices).main}`;
   });
 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Nav from './Components/Nav';
 import StoryCoverView from './views/StoryCoverView';
 import StoryReadView from './views/StoryReadView';
 import StoryEndView from './views/StoryEndView';
@@ -25,7 +26,10 @@ function App() {
   }
 
   return (
-    <>{ view }</>
+    <>
+      <Nav/>
+      { view }
+    </>
   );
 }
 
