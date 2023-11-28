@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import MainDiv from '../../Components/MainDiv';
 import MainText from '../../Components/MainText';
+import Divider from '../../Components/Divider';
 import ButtonContainer from '../../Components/ButtonContainer';
 import Button from '../../Components/Button';
 
@@ -56,6 +57,7 @@ function StoryReadView({ onModeChange, onDataHandle }) {
   return (
     <MainDiv>
       <MainText>{ mainText }</MainText>
+      <Divider/>
       <ButtonContainer>
         <Button id='btnA' $isVisible={ btnADisp } $bgColor={ btnABgColor } $color={ btnAColor } onClick={ event => handleClick(event) }>{ btnAText }</Button>
         <Button id='btnB' $bgColor={ btnBBgColor } onClick={ event => handleClick(event) }>{ btnBText }</Button>

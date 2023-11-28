@@ -2,6 +2,7 @@ import Button from "../../Components/Button";
 import ButtonContainer from "../../Components/ButtonContainer";
 import MainDiv from "../../Components/MainDiv";
 import MainText from "../../Components/MainText";
+import Divider from "../../Components/Divider";
 
 import getSerialStories from "./endDataGetter";
 
@@ -15,6 +16,7 @@ function StoryEndView({ userChoices }) {
   return(
     <MainDiv>
       <MainText>{ mainText }</MainText>
+      <Divider/>
       <ButtonContainer>
         <Button $bgColor={ btnReplayBgColor } onClick={ () => window.location.replace('/') }>처음부터 다시하기</Button>
         <Button $bgColor={ btnShareBgColor } $color={ btnShareColor }>카톡으로 공유하기</Button>

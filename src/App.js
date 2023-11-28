@@ -20,9 +20,9 @@ function App() {
   if (mode === 'coverMode') {
     view = <StoryCoverView onModeChange={ handleChangeMode }/>;
   } else if (mode === 'readMode') {
-    view = <StoryReadView onModeChange={ handleChangeMode } onDataHandle={ handleUserChoices }/>
+    view = <StoryReadView onModeChange={ handleChangeMode } onDataHandle={ handleUserChoices }/>;
   } else if (mode === 'endMode') {
-    view = <StoryEndView userChoices={ userChoices }/>
+    view = <StoryEndView userChoices={ userChoices }/>;
   }
 
   return (
