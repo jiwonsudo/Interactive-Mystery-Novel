@@ -11,7 +11,6 @@ import IMAGE_TORNADO from "./icons/tornado.png";
 import IMAGE_WEATHER_ERROR from "./icons/weather_error.png";
 import IMAGE_WINDY from "./icons/windy.png";
 
-
 export const WEATHER_IMAGE_URI = {
   CLOUDY: IMAGE_CLOUDY,
   DUSTY: IMAGE_DUSTY,
@@ -20,7 +19,7 @@ export const WEATHER_IMAGE_URI = {
   RAINY: IMAGE_RAINY,
   SNOWY: IMAGE_SNOWY,
   SUNNY_CLOUDY: IMAGE_SUNNY_CLOUDY,
-  SUNNY: IMAGE_SUNNY,
+  CLEAR: IMAGE_SUNNY,
   THUNDER: IMAGE_THUNDER,
   TORNADO: IMAGE_TORNADO,
   WEATHER_ERROR: IMAGE_WEATHER_ERROR,
