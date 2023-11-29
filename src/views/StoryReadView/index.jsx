@@ -8,7 +8,7 @@ import Button from '../../Components/Button';
 
 import { getMainStory, getChoiceA, getChoiceB, getIfEnd } from './readDataGetter';
 
-const btnABgColor = '#858585';
+const btnABgColor = '#C9C9C9';
 const btnBBgColor = '#0C3E9D';
 const btnAColor = '#000000';
 

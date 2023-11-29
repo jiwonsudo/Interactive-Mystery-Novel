@@ -9,7 +9,7 @@ import getSerialStories from "./endDataGetter";
 function StoryEndView({ userChoices }) {
   const mainText = getSerialStories(userChoices);
 
-  const btnShareBgColor = '#FEE500';
+  const btnShareBgColor = '#F7E600';
   const btnReplayBgColor = '#0C3E9D';
   const btnShareColor = '#191919';
 
@@ -18,7 +18,7 @@ function StoryEndView({ userChoices }) {
       <MainText>{ mainText }</MainText>
       <Divider/>
       <ButtonContainer>
-        <Button $bgColor={ btnReplayBgColor } onClick={ () => window.location.replace('/Interactive-Mystery-Novel/') }>처음부터 다시하기</Button>
+        <Button $bgColor={ btnReplayBgColor } onClick={ () => window.location.replace('/Interactive-Mystery-Novel') }>처음부터 다시하기</Button>
         <Button $bgColor={ btnShareBgColor } $color={ btnShareColor }>카톡으로 공유하기</Button>
       </ButtonContainer>
     </MainDiv>
