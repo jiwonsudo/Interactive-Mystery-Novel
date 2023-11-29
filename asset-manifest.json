@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Interactive-Mystery-Novel/static/css/main.93a0497a.css",
-    "main.js": "/Interactive-Mystery-Novel/static/js/main.a006f7aa.js",
+    "main.js": "/Interactive-Mystery-Novel/static/js/main.5d3ee2b7.js",
     "static/media/NanumSquareNeo-Variable.ttf": "/Interactive-Mystery-Novel/static/media/NanumSquareNeo-Variable.7e8297962f234fc4aa4b.ttf",
     "static/media/MaruBuri-SB.otf": "/Interactive-Mystery-Novel/static/media/MaruBuri-SB.2f6258053ed5a760fedc.otf",
     "static/media/tornado.png": "/Interactive-Mystery-Novel/static/media/tornado.29353f231e505e1bea74.png",
@@ -18,10 +18,10 @@
     "static/media/rainy.png": "/Interactive-Mystery-Novel/static/media/rainy.2d279b4756166a75e7ba.png",
     "index.html": "/Interactive-Mystery-Novel/index.html",
     "main.93a0497a.css.map": "/Interactive-Mystery-Novel/static/css/main.93a0497a.css.map",
-    "main.a006f7aa.js.map": "/Interactive-Mystery-Novel/static/js/main.a006f7aa.js.map"
+    "main.5d3ee2b7.js.map": "/Interactive-Mystery-Novel/static/js/main.5d3ee2b7.js.map"
   },
   "entrypoints": [
     "static/css/main.93a0497a.css",
-    "static/js/main.a006f7aa.js"
+    "static/js/main.5d3ee2b7.js"
   ]
 }
