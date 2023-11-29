@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import MainDiv from "../../Components/MainDiv";
 import MainText from "../../Components/MainText";
 import CoverText from "../../Components/CoverText";
@@ -9,6 +10,7 @@ import Button from "../../Components/Button";
 
 import copy from "./linkCopier";
 import { getSerialStories, getTitle } from "./endDataGetter";
+import { shareKakao } from "./kakaoShareHandler";
 
 function StoryEndView({ userChoices }) {
   const btnShareBgColor = '#F7E600';
@@ -20,6 +22,14 @@ function StoryEndView({ userChoices }) {
   const mainText = getSerialStories(userChoices);
 
   const marginTop = '60px';
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://developers.kakao.com/sdk/js/kakao.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
   
   return(
     <MainDiv>
@@ -32,7 +42,7 @@ function StoryEndView({ userChoices }) {
       <ButtonContainer>
         <Button $bgColor={ btnReplayBgColor } onClick={ () => window.location.replace('/Interactive-Mystery-Novel') }>처음부터 다시하기</Button>
         <Button $bgColor={ btnCopyLinkBgColor } onClick={ () => copy('시작 화면의 링크가 복사되었어요!') }>플레이 링크 복사하기</Button>
-        <Button $bgColor={ btnShareBgColor } $color={ btnShareColor }>카톡으로 공유하기</Button>
+        <Button $bgColor={ btnShareBgColor } $color={ btnShareColor } onClick={ () => shareKakao(`스토리레일 - ${coverTitle}`, mainText) }>카톡으로 공유하기</Button>
       </ButtonContainer>
     </MainDiv>
   )
