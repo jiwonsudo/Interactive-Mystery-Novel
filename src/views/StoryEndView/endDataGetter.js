@@ -6,10 +6,10 @@ function getSerialStories(userChoices) {
 
   userChoices.forEach(choice => {
     currChoices += choice;
-    fullStory += ` ${getStoryDataByPartialKey('story' + currChoices).main}`;
+    fullStory += getStoryDataByPartialKey('story' + currChoices).main;
   });
 
-  return fullStory;
+  return fullStory.split("\n").map((line, index) => <span key={ index }>{ line }<br/></span>);
 }
 
 const coverData = getStoryDataByPartialKey('cover');

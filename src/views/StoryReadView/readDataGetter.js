@@ -8,7 +8,7 @@ import getStoryDataByPartialKey from '../../utils/storyDataGetter';
 const storyData = (userChoicesList) => getStoryDataByPartialKey('story' + userChoicesList.join(''));
 
 function getMainStory(userChoicesList) {
-  return storyData(userChoicesList).main;
+  return storyData(userChoicesList).main.split("\n").map((line, index) => <span key={ index }>{ line }<br/></span>);
 }
 
 function getChoiceA(userChoicesList) {
