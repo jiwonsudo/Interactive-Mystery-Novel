@@ -18,7 +18,7 @@ function StoryEndView({ userChoices }) {
       <MainText>{ mainText }</MainText>
       <Divider/>
       <ButtonContainer>
-        <Button $bgColor={ btnReplayBgColor } onClick={ () => window.location.replace('/') }>처음부터 다시하기</Button>
+        <Button $bgColor={ btnReplayBgColor } onClick={ () => window.location.replace('/Interactive-Mystery-Novel/') }>처음부터 다시하기</Button>
         <Button $bgColor={ btnShareBgColor } $color={ btnShareColor }>카톡으로 공유하기</Button>
       </ButtonContainer>
     </MainDiv>
