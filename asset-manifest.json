@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/StoryRail-Deploy/static/css/main.93a0497a.css",
+    "main.js": "/StoryRail-Deploy/static/js/main.c6137b47.js",
+    "static/media/NanumSquareNeo-Variable.ttf": "/StoryRail-Deploy/static/media/NanumSquareNeo-Variable.7e8297962f234fc4aa4b.ttf",
+    "static/media/MaruBuri-SB.otf": "/StoryRail-Deploy/static/media/MaruBuri-SB.2f6258053ed5a760fedc.otf",
+    "static/media/tornado.png": "/StoryRail-Deploy/static/media/tornado.29353f231e505e1bea74.png",
+    "static/media/foggy.png": "/StoryRail-Deploy/static/media/foggy.91be134d445adf7eaf63.png",
+    "static/media/weather_error.png": "/StoryRail-Deploy/static/media/weather_error.c12be2ff60a4fd53ec69.png",
+    "static/media/moon.png": "/StoryRail-Deploy/static/media/moon.8601d60ef3ba9dd5ff17.png",
+    "static/media/windy.png": "/StoryRail-Deploy/static/media/windy.11827c3880deabdc3067.png",
+    "static/media/sunny_cloudy.png": "/StoryRail-Deploy/static/media/sunny_cloudy.bb805b4fea613a008a63.png",
+    "static/media/thunder.png": "/StoryRail-Deploy/static/media/thunder.aaabc8f3cb7bb6f482c8.png",
+    "static/media/dusty.png": "/StoryRail-Deploy/static/media/dusty.06b14f09b58d94431c6c.png",
+    "static/media/snowy.png": "/StoryRail-Deploy/static/media/snowy.c0aad60d9f82adc45278.png",
+    "static/media/cloudy.png": "/StoryRail-Deploy/static/media/cloudy.3c9706899faef88c3216.png",
+    "static/media/sunny.png": "/StoryRail-Deploy/static/media/sunny.98dbaff70c8a85e2ef36.png",
+    "static/media/rainy.png": "/StoryRail-Deploy/static/media/rainy.2d279b4756166a75e7ba.png",
+    "index.html": "/StoryRail-Deploy/index.html",
+    "main.93a0497a.css.map": "/StoryRail-Deploy/static/css/main.93a0497a.css.map",
+    "main.c6137b47.js.map": "/StoryRail-Deploy/static/js/main.c6137b47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93a0497a.css",
+    "static/js/main.c6137b47.js"
+  ]
+}
