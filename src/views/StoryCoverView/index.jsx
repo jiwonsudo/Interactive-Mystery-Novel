@@ -1,26 +1,11 @@
-import styled from 'styled-components';
 import MainDiv from '../../Components/MainDiv';
-import MainText from '../../Components/MainText';
+import CoverText from '../../Components/CoverText';
+import Title from '../../Components/Title';
+import WriterInfo from '../../Components/WriterInfo';
 import ButtonContainer from '../../Components/ButtonContainer';
 import Button from '../../Components/Button';
 
 import { getTitle, getOriginalAuthor, getAdaptationWriter } from './coverDataGetter';
-
-const CoverText = styled(MainText)`
-  margin-top: 30vh;
-  font-family: 'NanumSquareNeo', sans-serif;
-  text-align: center;
-`;
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  font-weight: 500;
-`;
-
-const WriterInfo = styled.p`
-  margin: 0.3em;
-  font-size: 0.8em;
-`;
 
 const btnBgColor = '#06296C';
 

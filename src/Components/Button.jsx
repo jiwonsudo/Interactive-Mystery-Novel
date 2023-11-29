@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  width: 40vw;
-  max-width: 300px;
+  max-width: 40vw;
+  margin: 0 15px;
   padding: 14px 25px;
   border-radius: 15px;
   border: 1px solid #858585;
@@ -13,6 +13,7 @@ const Button = styled.button`
   font-size: 0.8em;
   line-height: 1.2em;
   display: ${props => props.$isVisible ? props.$isVisible : 'block'};
+  word-break: keep-all;
 `;
 
 export default Button;
