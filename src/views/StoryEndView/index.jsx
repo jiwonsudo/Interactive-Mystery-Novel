@@ -42,7 +42,7 @@ function StoryEndView({ userChoices }) {
       <ButtonContainer>
         <Button $bgColor={ btnReplayBgColor } onClick={ () => window.location.replace('/Interactive-Mystery-Novel') }>처음부터 다시하기</Button>
         <Button $bgColor={ btnCopyLinkBgColor } onClick={ () => copy('시작 화면의 링크가 복사되었어요!') }>플레이 링크 복사하기</Button>
-        <Button $bgColor={ btnShareBgColor } $color={ btnShareColor } onClick={ () => shareKakao(`스토리레일 - ${coverTitle}`, mainText) }>카톡으로 공유하기</Button>
+        <Button $bgColor={ btnShareBgColor } $color={ btnShareColor } onClick={ () => shareKakao(`스토리레일 - ${coverTitle}`, '내가 직접 플레이하는 소설') }>카톡으로 공유하기</Button>
       </ButtonContainer>
     </MainDiv>
   )
