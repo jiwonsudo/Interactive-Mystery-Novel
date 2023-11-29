@@ -39,7 +39,7 @@ function StoryReadView({ onModeChange, onDataHandle }) {
     setMainText(getMainStory(userChoices));
     setBtnAText(getChoiceA(userChoices));
     setBtnBText(getChoiceB(userChoices));
-  }, []);
+  }, [userChoices]);
 
   useEffect(() => {
     if (getIfEnd(userChoices) === true) {
