@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Interactive-Mystery-Novel/static/css/main.93a0497a.css",
-    "main.js": "/Interactive-Mystery-Novel/static/js/main.9fa72492.js",
-    "static/media/NanumSquareNeo-Variable.ttf": "/Interactive-Mystery-Novel/static/media/NanumSquareNeo-Variable.7e8297962f234fc4aa4b.ttf",
-    "static/media/MaruBuri-SB.otf": "/Interactive-Mystery-Novel/static/media/MaruBuri-SB.2f6258053ed5a760fedc.otf",
-    "static/media/tornado.png": "/Interactive-Mystery-Novel/static/media/tornado.29353f231e505e1bea74.png",
-    "static/media/foggy.png": "/Interactive-Mystery-Novel/static/media/foggy.91be134d445adf7eaf63.png",
-    "static/media/weather_error.png": "/Interactive-Mystery-Novel/static/media/weather_error.c12be2ff60a4fd53ec69.png",
-    "static/media/moon.png": "/Interactive-Mystery-Novel/static/media/moon.8601d60ef3ba9dd5ff17.png",
-    "static/media/windy.png": "/Interactive-Mystery-Novel/static/media/windy.11827c3880deabdc3067.png",
-    "static/media/sunny_cloudy.png": "/Interactive-Mystery-Novel/static/media/sunny_cloudy.bb805b4fea613a008a63.png",
-    "static/media/thunder.png": "/Interactive-Mystery-Novel/static/media/thunder.aaabc8f3cb7bb6f482c8.png",
-    "static/media/dusty.png": "/Interactive-Mystery-Novel/static/media/dusty.06b14f09b58d94431c6c.png",
-    "static/media/snowy.png": "/Interactive-Mystery-Novel/static/media/snowy.c0aad60d9f82adc45278.png",
-    "static/media/cloudy.png": "/Interactive-Mystery-Novel/static/media/cloudy.3c9706899faef88c3216.png",
-    "static/media/sunny.png": "/Interactive-Mystery-Novel/static/media/sunny.98dbaff70c8a85e2ef36.png",
-    "static/media/rainy.png": "/Interactive-Mystery-Novel/static/media/rainy.2d279b4756166a75e7ba.png",
-    "index.html": "/Interactive-Mystery-Novel/index.html",
-    "main.93a0497a.css.map": "/Interactive-Mystery-Novel/static/css/main.93a0497a.css.map",
-    "main.9fa72492.js.map": "/Interactive-Mystery-Novel/static/js/main.9fa72492.js.map"
+    "main.css": "/Interactive-Novel-Webapp/static/css/main.93a0497a.css",
+    "main.js": "/Interactive-Novel-Webapp/static/js/main.cd0393fe.js",
+    "static/media/NanumSquareNeo-Variable.ttf": "/Interactive-Novel-Webapp/static/media/NanumSquareNeo-Variable.7e8297962f234fc4aa4b.ttf",
+    "static/media/MaruBuri-SB.otf": "/Interactive-Novel-Webapp/static/media/MaruBuri-SB.2f6258053ed5a760fedc.otf",
+    "static/media/tornado.png": "/Interactive-Novel-Webapp/static/media/tornado.29353f231e505e1bea74.png",
+    "static/media/foggy.png": "/Interactive-Novel-Webapp/static/media/foggy.91be134d445adf7eaf63.png",
+    "static/media/weather_error.png": "/Interactive-Novel-Webapp/static/media/weather_error.c12be2ff60a4fd53ec69.png",
+    "static/media/moon.png": "/Interactive-Novel-Webapp/static/media/moon.8601d60ef3ba9dd5ff17.png",
+    "static/media/windy.png": "/Interactive-Novel-Webapp/static/media/windy.11827c3880deabdc3067.png",
+    "static/media/sunny_cloudy.png": "/Interactive-Novel-Webapp/static/media/sunny_cloudy.bb805b4fea613a008a63.png",
+    "static/media/thunder.png": "/Interactive-Novel-Webapp/static/media/thunder.aaabc8f3cb7bb6f482c8.png",
+    "static/media/dusty.png": "/Interactive-Novel-Webapp/static/media/dusty.06b14f09b58d94431c6c.png",
+    "static/media/snowy.png": "/Interactive-Novel-Webapp/static/media/snowy.c0aad60d9f82adc45278.png",
+    "static/media/cloudy.png": "/Interactive-Novel-Webapp/static/media/cloudy.3c9706899faef88c3216.png",
+    "static/media/sunny.png": "/Interactive-Novel-Webapp/static/media/sunny.98dbaff70c8a85e2ef36.png",
+    "static/media/rainy.png": "/Interactive-Novel-Webapp/static/media/rainy.2d279b4756166a75e7ba.png",
+    "index.html": "/Interactive-Novel-Webapp/index.html",
+    "main.93a0497a.css.map": "/Interactive-Novel-Webapp/static/css/main.93a0497a.css.map",
+    "main.cd0393fe.js.map": "/Interactive-Novel-Webapp/static/js/main.cd0393fe.js.map"
   },
   "entrypoints": [
     "static/css/main.93a0497a.css",
-    "static/js/main.9fa72492.js"
+    "static/js/main.cd0393fe.js"
   ]
 }
