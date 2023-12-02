@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Interactive-Novel-Webapp/static/css/main.93a0497a.css",
-    "main.js": "/Interactive-Novel-Webapp/static/js/main.1c3e99f5.js",
+    "main.js": "/Interactive-Novel-Webapp/static/js/main.1c8d0af3.js",
     "static/media/NanumSquareNeo-Variable.ttf": "/Interactive-Novel-Webapp/static/media/NanumSquareNeo-Variable.7e8297962f234fc4aa4b.ttf",
     "static/media/MaruBuri-SB.otf": "/Interactive-Novel-Webapp/static/media/MaruBuri-SB.2f6258053ed5a760fedc.otf",
     "static/media/tornado.png": "/Interactive-Novel-Webapp/static/media/tornado.29353f231e505e1bea74.png",
@@ -18,10 +18,10 @@
     "static/media/rainy.png": "/Interactive-Novel-Webapp/static/media/rainy.2d279b4756166a75e7ba.png",
     "index.html": "/Interactive-Novel-Webapp/index.html",
     "main.93a0497a.css.map": "/Interactive-Novel-Webapp/static/css/main.93a0497a.css.map",
-    "main.1c3e99f5.js.map": "/Interactive-Novel-Webapp/static/js/main.1c3e99f5.js.map"
+    "main.1c8d0af3.js.map": "/Interactive-Novel-Webapp/static/js/main.1c8d0af3.js.map"
   },
   "entrypoints": [
     "static/css/main.93a0497a.css",
-    "static/js/main.1c3e99f5.js"
+    "static/js/main.1c8d0af3.js"
   ]
 }
