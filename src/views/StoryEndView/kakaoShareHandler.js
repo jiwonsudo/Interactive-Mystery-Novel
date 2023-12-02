@@ -10,7 +10,7 @@ const shareKakao = (title, text) => {
       content: {
         title: title,
         description: text,
-        imageUrl: "/Interactive-Mystery-Novel/main_logo.png",
+        imageUrl: `${process.env.PUBLIC_URL}/main_logo.png`,
         link: {
           mobileWebUrl: 'https://jiwonsudo.github.io/Interactive-Novel-Webapp',
           webUrl: 'https://jiwonsudo.github.io/Interactive-Novel-Webapp'
