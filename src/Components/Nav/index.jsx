@@ -69,7 +69,7 @@ function Nav() {
 
   return (
     <NavBar>
-      <Icon $src="/Interactive-Mystery-Novel/main_logo.png" $widthHeight="30px"></Icon>
+      <Icon $src={ `${process.env.PUBLIC_URL}/main_logo.png` } $widthHeight="30px"></Icon>
       <Icon $src={ weatherIconUrl } $widthHeight="32px" onClick={ handleDescDisplay }></Icon>
       <CurrWeatherInfo $isVisible={ showDescription }>{ currWeather }</CurrWeatherInfo>
     </NavBar>
