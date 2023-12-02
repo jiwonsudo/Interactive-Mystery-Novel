@@ -1,4 +1,4 @@
-const shareKakao = (title, text) => { // url이 id값에 따라 변경되기 때문에 route를 인자값으로 받아줌
+const shareKakao = (title, text) => {
   if (window.Kakao) {
     const kakao = window.Kakao;
     if (!kakao.isInitialized()) {
@@ -12,16 +12,16 @@ const shareKakao = (title, text) => { // url이 id값에 따라 변경되기 때
         description: text,
         imageUrl: "/Interactive-Mystery-Novel/main_logo.png",
         link: {
-          mobileWebUrl: 'https://jiwonsudo.github.io/Interactive-Mystery-Novel',
-          webUrl: 'https://jiwonsudo.github.io/Interactive-Mystery-Novel/'
+          mobileWebUrl: 'https://jiwonsudo.github.io/Interactive-Novel-Webapp',
+          webUrl: 'https://jiwonsudo.github.io/Interactive-Novel-Webapp'
         }
       },
       buttons: [
         {
           title: title,
           link: {
-            mobileWebUrl: 'https://jiwonsudo.github.io/Interactive-Mystery-Novel',
-            webUrl: 'https://jiwonsudo.github.io/Interactive-Mystery-Novel'
+            mobileWebUrl: 'https://jiwonsudo.github.io/Interactive-Novel-Webapp',
+            webUrl: 'https://jiwonsudo.github.io/Interactive-Novel-Webapp'
           }
         }
       ]
